@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            color: #136b66;
+            font-weight: 700;
+        }
+
+        span {
+            color: #13b3ac;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } */
+
+        .container {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px; /* Reduced padding */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px; /* Reduced width */
+            text-align: center;
+            margin: auto;
+            margin-top: 225px;
+        }
+
+        .navbar {
+            display: flex;
+            height: 100%;
+        }
+
+        .navbar a {
+            color: #13b3ac;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.5s ease, border-bottom 0.5s ease; /* Added transition */
+        }
+
+        .navbar a:hover {
+    color: #136b66;
+  }
+
+        #login-form,
+        #signup-form {
+            display: block;
+        }
+
+        #signup-form {
+            display: none;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px; /* Reduced padding */
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .toggle-form {
+            margin-top: 10px;
+            cursor: pointer;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Your Image" style="height: 50px; width: auto;">
+        <span>travelIN'</span>
+    </div>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Seasonal Tours</a>
+        <a href="#">Mostly Visited</a>
+        <a href="#">Reviews</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <!-- <video autoplay loop muted plays-inline>
+        <source src="bg.mp4" type="video/mp4" /> 
+    </video> -->
+
+    <div class="container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <form onsubmit="return loginUser()">
+                <input type="email" placeholder="Email" id="login-email" required>
+                <input type="password" placeholder="Password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p class="toggle-form" onclick="toggleForms()">Don't have an account? Register now</p>
+        </div>
+
+        <div id="signup-form">
+            <h2>Sign Up</h2>
+            <form onsubmit="return signUpUser()">
+                <input type="email" placeholder="Email" id="signup-email" required>
+                <input type="password" placeholder="Password" id="signup-password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="toggle-form" onclick="toggleForms()">Already have an account? Log in</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleForms() {
+        var loginForm = document.getElementById('login-form');
+        var signupForm = document.getElementById('signup-form');
+
+        loginForm.style.display = loginForm.style.display === 'none' ? 'block' : 'none';
+        signupForm.style.display = signupForm.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function loginUser() {
+        // Add login logic here
+        alert('Login logic goes here');
+        return false; // prevent form submission for demonstration purposes
+    }
+
+    function signUpUser() {
+        // Add signup logic here
+        alert('Sign up logic goes here');
+        return false; // prevent form submission for demonstration purposes
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  :root {
+    --text-color: #000;
+    --bg-color: #f0f0f0;
+    --main-color: #13b3ac;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+  }
+  
+  body {
+    color: var(--text-color);
+    background: var(--bg-color);
+  }
+  
+  header {
+    position: fixed;
+    top: -10;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 5px 3%; /* Corrected padding value */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    background-color: #fff;
+  }
+  
+  .logo img{
+    height: 10px;
+    width: auto;
+    margin-right: 10px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    /* width: 50px; */
+    font-size: 33px;
+    color: #136b66;
+    font-weight: 700;
+  }
+  
+  span {
+    color: var(--main-color);
+  }
+  .navbar {
+    display: flex;
+    height: 0%;
+    
+  }
+  .navbar a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all 0.5s ease;
+    color: #13b3ac;
+  }
+  .navbar a:hover {
+    color: #136b66;
+  }
+  .h-right {
+    display: flex;
+    align-items: center;
+  }
+  .h-right a:first-child {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+  }
+  .h-right a {
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+  }
+  .h-right a:hover {
+    color: var(--main-color);
+    transform: translateY(-3px);
+  }
+  #menu-icon {
+    color: var(--text-color);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+  }
+  section {
+    padding: 70px 17% 60px;
+  }
+  header.sticky {
+    padding: 8px 17%;
+    background: transparent;
+    backdrop-filter: blur(35px);
+  }
+.image{
+    background-image: url('dehradunbg.jpeg.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.image h1{
+    text-align: center;
+    padding-top: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: #fff;
+}
+.Iternary{
+  font-size: 25px;
+  margin-left: 100px;
+}
+.list h1{
+  font-size: 30px;
+}
+.list p{
+  font-size: 15px;
+}
+.list p {
+  text-align: justify;
+  margin-left: 3%; /* Adjust as needed */
+  max-width: 70%; /* Adjust as needed */
+}
+.Lodging table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Lodging th,
+.Lodging td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.Lodging th {
+  background-color: #f2f2f2;
+}
+
+.Lodging tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.Lodging tr:hover {
+  background-color: #f2f2f2;
+}
+.Lodging {
+  text-align: justify;
+  margin-left: 1%; /* Adjust as needed */
+  max-width: 70%; /* Adjust as needed */
+}
+.Misc {
+  display: flex;
+}
+
+.section {
+  flex: 1;
+  margin-right: 20px; /* Adjust spacing between sections */
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section p {
+  margin-top: 10px;
+  font-style: italic;
+}
+.Misc img{
+  height: 600px;
+  width: 500px;
+}
+.icon {
+  display: inline-block; /* Ensure the icon and text are on the same line */
+  width: 24px; /* Adjust the width and height as needed */
+  height: 24px;
+  background: url('iternary.svg') no-repeat center center; /* Replace 'path_to_your_icon.svg' with the path to your icon */
+  background-size: contain; /* Ensure the icon scales properly */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+.icon60 {
+  display: inline-block;
+  width: 40px; /* Ensure the icon and text are on the same line */ /* Adjust the width and height as needed */
+  height: 40px;
+  background: url('iternary.svg') no-repeat center center; /* Replace 'path_to_your_icon.svg' with the path to your icon */
+  background-size: contain; /* Ensure the icon scales properly */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+.icon1 {
+  display: inline-block; /* Ensure the icon and text are on the same line */
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+  background: url('hotel.svg') no-repeat center center; /* Replace 'path_to_your_icon.svg' with the path to your icon */
+  background-size: contain; /* Ensure the icon scales properly */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+.icon2 {
+  display: inline-block; /* Ensure the icon and text are on the same line */
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+  background: url('castle.svg') no-repeat center center; /* Replace 'path_to_your_icon.svg' with the path to your icon */
+  background-size: contain; /* Ensure the icon scales properly */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+.icon3 {
+  display: inline-block; /* Ensure the icon and text are on the same line */
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+  background: url('food.svg') no-repeat center center; /* Replace 'path_to_your_icon.svg' with the path to your icon */
+  background-size: contain; /* Ensure the icon scales properly */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+.icon4 {
+  display: inline-block; /* Ensure the icon and text are on the same line */
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+  background: url('shopping.svg') no-repeat center center; /* Replace 'path_to_your_icon.svg' with the path to your icon */
+  background-size: contain; /* Ensure the icon scales properly */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+
+
+.navbar1 a {
+  display: absolute;
+  align-items: center; /* Align items vertically */
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 500;
+  margin: 15px 22px;
+  transition: all 0.5s ease;
+  color: #13b3ac;
+  text-align: center;
+  margin-left: 30px;
+  justify-content: center;
+}
+
+.navbar1 a .icon,
+.navbar1 a .icon1,
+.navbar1 a .icon2,
+.navbar1 a .icon3,
+.navbar1 a .icon4 {
+  width: 24px; /* Adjust the width and height as needed */
+  height: 24px;
+  background-size: contain; /* Ensure the icon scales properly */
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+.navbar1{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  height: auto;
+
+}
+.navbar1 a:hover {
+  color: var(--main-color)
+}
+.icon5 {
+  display: inline-block; /* Ensure the icon and text are on the same line */
+  width: 30px; /* Adjust the width and height as needed */
+  height: 30px;
+  background: url('map.svg') no-repeat center center; /* Replace 'path_to_your_icon.svg' with the path to your icon */
+  background-size: contain; /* Ensure the icon scales properly */
+  margin-right: 2px;/* Adjust the spacing between the icon and text */
+}
+.nav {
+  /* position: fixed; */
+  /* top: -10; */
+  z-index: 1000;
+  width: 100%;
+  background: transparent;
+  padding: 5px 3%; /* Corrected padding value */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  background-color: #fff;
+  margin-top: -50px;
+  
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.contact-info,
+.about-us,
+.social-media {
+  flex: 1;
+  max-width: 300px;
+  padding: 0 10px; /* Add some spacing between columns */
+}
+
+.contact-info h3,
+.about-us h3,
+.social-media h3 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contact-info p,
+.about-us p,
+.social-media p {
+  text-align: left;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
