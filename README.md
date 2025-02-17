@@ -22,7 +22,7 @@ TravelIN’ is a smart travel planning website that provides personalized itiner
 ## Installation & Usage  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/travelin.git
+   git clone https://github.com/cherrychhallani/travelIN.git
    ```  
 2. Open the project folder and launch `index.html` in a browser.  
 
